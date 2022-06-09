@@ -7,48 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <label>Converter de: </label>
-        <br>
-        <br>
-        <label>Moeda: </label>
-        <input type="text" id="idMoeda">
-        <select id="idMoedaOrigem">
-            <option value="Real" selected>Real</option>
-            <option value="Dólar Americano">Dólar Americano</option>
-            <option value="Dólar Canadense">Dólar Canadense</option>
-            <option value="Euro">Euro</option>
-            <option value="Libra Esterlina">Libra Esterlina</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Para: </label><br><br>
-
-        <label>Moeda: </label>
-
-        <select id="idMoedaSaida">
-            <option value="Real" selected>Real</option>
-            <option value="Dólar Americano">Dólar Americano</option>
-            <option value="Dólar Canadense">Dólar Canadense</option>
-            <option value="Euro">Euro</option>
-            <option value="Libra Esterlina">Libra Esterlina</option>
-        </select>
-
-        <br>
-        <br>
-
-        <button onclick="converter()">Converter</button>
+    <form action="">
         
+    <label>Converter de: </label>
+    <br>
+    <br>
+    <label>Moeda: </label>
+    <input type="text" id="idMoeda">
+    <select id="idMoedaOrigem">
+        <option value="Real" selected>Real</option>
+        <option value="Dólar Americano">Dólar Americano</option>
+        <option value="Dólar Canadense">Dólar Canadense</option>
+        <option value="Euro">Euro</option>
+        <option value="Libra Esterlina">Libra Esterlina</option>
+    </select>
 
-        <br>
-        <br>
+    <br>
+    <br>
 
-        <label>Conversão: </label>
-        <label id="idResultado"></label>
+    <label>Para: </label><br><br>
+
+    <label>Moeda: </label>
+
+    <select id="idMoedaSaida">
+        <option value="Real" selected>Real</option>
+        <option value="Dólar Americano">Dólar Americano</option>
+        <option value="Dólar Canadense">Dólar Canadense</option>
+        <option value="Euro">Euro</option>
+        <option value="Libra Esterlina">Libra Esterlina</option>
+    </select>
+
+    <br>
+    <br>
+
+    <button type="button" onclick="converter()">Converter</button>
+    <input type="reset" value="Limpar">
+    
+
+    <br>
+    <br>
+
+    <label>Conversão: </label>
+    <label id="idResultado"></label>
 
 
+    </form>
 
         <script>
             function converter() {
